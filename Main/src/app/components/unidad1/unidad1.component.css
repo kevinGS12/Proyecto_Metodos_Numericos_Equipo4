@@ -1,0 +1,10 @@
+.view{
+    margin-top: 50px !important; 
+}
+.pregunta{
+    margin: 50px;
+}
+.respuesta{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
