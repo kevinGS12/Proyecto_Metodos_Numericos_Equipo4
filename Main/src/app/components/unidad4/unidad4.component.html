@@ -1,0 +1,190 @@
+<h2>Integración</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta ea aliquid minima non illum eos blanditiis expedita, rerum quod temporibus est modi, consequatur ab? Dolor voluptates ullam quis in.</p>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Seleccione un tema
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" (click)="Todos()">Mostrar todos</a>
+      <a class="dropdown-item" (click)="ReglaTrapezoidal()">Regla Trapezoidal</a>
+      <a class="dropdown-item" (click)="Simpson()">Regla 3/8 Simpson</a>
+      <a class="dropdown-item" (click)="NewtonC()">Newton-Cotes (Cerradas y Abiertas)</a>
+      <a class="dropdown-item" (click)="EcuacionesD()">Ecuaciones diferenciales ordinaria</a>
+      <a class="dropdown-item" (click)="RungeK()">Método Runge-Kutten</a>
+
+  </div>
+</div>
+
+<!--Contenido de los temas individualmente-->
+<div>
+  <div class="view">
+      <div class="pregunta">
+        <div *ngIf="(value == 'ReglaTrapezoidal')">
+            <h3>Regla Trapezoidal</h3>
+            <ul *ngFor="let item of PrReglaTrapezoidal">
+                <li>{{item.pregunta}}</li>
+                <div class="card respuesta" style="width: 18rem;">
+                  <ul class="list-group list-group-flush" *ngFor="let item of PrReglaTrapezoidal">
+                    <button class="list-group-item">{{item.respuesta}}</button>
+                  </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="view">
+    <div class="pregunta">
+      <div class="mt-4" *ngIf="(value == 'Simpson')">
+        <h3>Regla 3/8 Simpson</h3>
+        <ul *ngFor="let item of PrSimpson">
+            <li>{{item.pregunta}}</li>
+            <div class="card respuesta" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <button class="list-group-item">Cras justo odio</button>
+                <button class="list-group-item">Dapibus ac facilisis in</button>
+                <button class="list-group-item">Vestibulum at eros</button>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="view">
+    <div class="pregunta">
+      <div class="mt-4" *ngIf="(value == 'NewtonC')">
+        <h3>Newton-Cotes (Cerradas y Abiertas)</h3>
+        <ul *ngFor="let item of PrNewtonC">
+            <li>{{item.pregunta}}</li>
+            <div class="card respuesta" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <button class="list-group-item">Cras justo odio</button>
+                <button class="list-group-item">Dapibus ac facilisis in</button>
+                <button class="list-group-item">Vestibulum at eros</button>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="view">
+    <div class="pregunta">
+      <div class="mt-4" *ngIf="(value == 'EcuacionesD')">
+        <h3>Ecuaciones diferenciales ordinaria</h3>
+        <ul *ngFor="let item of PrEcuacionesD">
+            <li>{{item.pregunta}}</li>
+            <div class="card respuesta" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <button class="list-group-item">Cras justo odio</button>
+                <button class="list-group-item">Dapibus ac facilisis in</button>
+                <button class="list-group-item">Vestibulum at eros</button>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="view">
+    <div class="pregunta">
+      <div class="mt-4" *ngIf="(value == 'RungeK')">
+        <h3>Método Runge-Kutten</h3>
+        <ul *ngFor="let item of PrRungeK">
+            <li>{{item.pregunta}}</li>
+            <div class="card respuesta" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <button class="list-group-item">Cras justo odio</button>
+                <button class="list-group-item">Dapibus ac facilisis in</button>
+                <button class="list-group-item">Vestibulum at eros</button>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--Contenido de todos los temas-->
+<div *ngIf="(value == 'Todos')">
+  <div class="view">
+    <h3>Regla Trapezoidal</h3>
+    <div class="pregunta">
+      <ul *ngFor="let item of PrReglaTrapezoidal">
+        <li>{{item.pregunta}}</li>
+        <div class="card respuesta" style="width: 18rem;">
+          <ul class="list-group list-group-flush" *ngFor="let item of PrReglaTrapezoidal">
+            <button class="list-group-item">{{item.respuesta}}</button>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="view">
+    <h3>Regla 3/8 Simpson</h3>
+    <div class="pregunta">
+      <ul *ngFor="let item of PrSimpson">
+        <li>{{item.pregunta}}</li>
+        <div class="card respuesta" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <button class="list-group-item">Cras justo odio</button>
+            <button class="list-group-item">Dapibus ac facilisis in</button>
+            <button class="list-group-item">Vestibulum at eros</button>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="view">
+    <h3>Newton-Cotes (Cerradas y Abiertas)</h3>
+    <div class="pregunta">
+      <ul *ngFor="let item of PrNewtonC">
+        <li>{{item.pregunta}}</li>
+        <div class="card respuesta" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <button class="list-group-item">Cras justo odio</button>
+            <button class="list-group-item">Dapibus ac facilisis in</button>
+            <button class="list-group-item">Vestibulum at eros</button>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="view">
+    <h3>Ecuaciones diferenciales ordinaria</h3>
+    <div class="pregunta">
+      <ul *ngFor="let item of PrEcuacionesD">
+        <li>{{item.pregunta}}</li>
+        <div class="card respuesta" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <button class="list-group-item">Cras justo odio</button>
+            <button class="list-group-item">Dapibus ac facilisis in</button>
+            <button class="list-group-item">Vestibulum at eros</button>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="view">
+    <h3>Método Runge-Kutten</h3>
+    <div class="pregunta">
+      <ul *ngFor="let item of PrRungeK">
+        <li>{{item.pregunta}}</li>
+        <div class="card respuesta" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <button class="list-group-item">Cras justo odio</button>
+            <button class="list-group-item">Dapibus ac facilisis in</button>
+            <button class="list-group-item">Vestibulum at eros</button>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+</div>
