@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Unidad1Component } from './components/unidad1/unidad1.component';
 import { Unidad2Component } from './components/unidad2/unidad2.component';
+import { Unidad3Component } from './components/unidad3/unidad3.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { Unidad2Component } from './components/unidad2/unidad2.component';
     NavbarComponent,
     InicioComponent,
     Unidad1Component,
-    Unidad2Component
+    Unidad2Component,
+    Unidad3Component
   ],
   imports: [
     BrowserModule,

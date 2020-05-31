@@ -44,14 +44,15 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Unidad 3
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <h6 class="dropdown-header text-info">Ecuaciones lineales</h6>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
+                <a class="dropdown-header text-primary" [routerLink]="['unidad3']">Ecuaciones lineales</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Método Montante</a>
-                <a class="dropdown-item" href="#">Método Gauss-Jordan</a>
-                <a class="dropdown-item" href="#">Eliminación Gaussiana</a>
-                <a class="dropdown-item" href="#">Gauss-Seidel</a>
-                <a class="dropdown-item" href="#">Jacobi</a>
+                <a class="dropdown-item disabled">Temas: </a>
+                <a class="dropdown-item disabled">Método Montante</a>
+                <a class="dropdown-item disabled">Método Gauss-Jordan</a>
+                <a class="dropdown-item disabled">Eliminación Gaussiana</a>
+                <a class="dropdown-item disabled" >Gauss-Seidel</a>
+                <a class="dropdown-item disabled">Jacobi</a>
             </div>
           </li>
           <li class="nav-item dropdown">
