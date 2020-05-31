@@ -1,188 +1,190 @@
-<h2>Interpolacion Polinomial</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta ea aliquid minima non illum eos blanditiis expedita, rerum quod temporibus est modi, consequatur ab? Dolor voluptates ullam quis in.</p>
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Seleccione un tema
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" (click)="Todos()">Mostrar todos</a>
-      <a class="dropdown-item" (click)="Interpolacion()">Interpolación Lineal</a>
-      <a class="dropdown-item" (click)="NewtonA()">Newton hacia adelante</a>
-      <a class="dropdown-item" (click)="NewtonD()">Newton hacia atras</a>
-      <a class="dropdown-item" (click)="NewtonDD()">Newton con diferencias divididas</a>
-      <a class="dropdown-item" (click)="Lagrange()">Lagrange</a>
+<div class="animated fadeIn">
+  <h2>Interpolacion Polinomial</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta ea aliquid minima non illum eos blanditiis expedita, rerum quod temporibus est modi, consequatur ab? Dolor voluptates ullam quis in.</p>
+  <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Seleccione un tema
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="Todos()">Mostrar todos</a>
+        <a class="dropdown-item" (click)="Interpolacion()">Interpolación Lineal</a>
+        <a class="dropdown-item" (click)="NewtonA()">Newton hacia adelante</a>
+        <a class="dropdown-item" (click)="NewtonD()">Newton hacia atras</a>
+        <a class="dropdown-item" (click)="NewtonDD()">Newton con diferencias divididas</a>
+        <a class="dropdown-item" (click)="Lagrange()">Lagrange</a>
+    </div>
   </div>
-</div>
 
-<!--Contenido de los temas individualmente-->
-<div>
-  <div class="view">
+  <!--Contenido de los temas individualmente-->
+  <div>
+    <div class="view">
+        <div class="pregunta">
+          <div *ngIf="(value == 'Interpolacion')">
+              <h3>Interpolación Lineal</h3>
+              <ul *ngFor="let item of PrInterpolacion">
+                  <li>{{item.pregunta}}</li>
+                  <div class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of PrInterpolacion">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="view">
       <div class="pregunta">
-        <div *ngIf="(value == 'Interpolacion')">
-            <h3>Interpolación Lineal</h3>
-            <ul *ngFor="let item of PrInterpolacion">
-                <li>{{item.pregunta}}</li>
-                <div class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of PrInterpolacion">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
+        <div class="mt-4" *ngIf="(value == 'NewtonA')">
+          <h3>Newton hacia adelante</h3>
+          <ul *ngFor="let item of PrNewtonA">
+              <li>{{item.pregunta}}</li>
+              <div class="card respuesta" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <button class="list-group-item">Cras justo odio</button>
+                  <button class="list-group-item">Dapibus ac facilisis in</button>
+                  <button class="list-group-item">Vestibulum at eros</button>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="view">
+      <div class="pregunta">
+        <div class="mt-4" *ngIf="(value == 'NewtonD')">
+          <h3>Newton hacia atras</h3>
+          <ul *ngFor="let item of PrNewtonD">
+              <li>{{item.pregunta}}</li>
+              <div class="card respuesta" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <button class="list-group-item">Cras justo odio</button>
+                  <button class="list-group-item">Dapibus ac facilisis in</button>
+                  <button class="list-group-item">Vestibulum at eros</button>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="view">
+      <div class="pregunta">
+        <div class="mt-4" *ngIf="(value == 'NewtonDD')">
+          <h3>Newton con diferencias divididas</h3>
+          <ul *ngFor="let item of PrNewtonDD">
+              <li>{{item.pregunta}}</li>
+              <div class="card respuesta" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <button class="list-group-item">Cras justo odio</button>
+                  <button class="list-group-item">Dapibus ac facilisis in</button>
+                  <button class="list-group-item">Vestibulum at eros</button>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="view">
+      <div class="pregunta">
+        <div class="mt-4" *ngIf="(value == 'Lagrange')">
+          <h3>Lagrange</h3>
+          <ul *ngFor="let item of PrLagrange">
+              <li>{{item.pregunta}}</li>
+              <div class="card respuesta" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <button class="list-group-item">Cras justo odio</button>
+                  <button class="list-group-item">Dapibus ac facilisis in</button>
+                  <button class="list-group-item">Vestibulum at eros</button>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Contenido de todos los temas-->
+  <div *ngIf="(value == 'Todos')">
+    <div class="view">
+      <h3>Interpolación Lineal</h3>
+      <div class="pregunta">
+        <ul *ngFor="let item of PrInterpolacion">
+          <li>{{item.pregunta}}</li>
+          <div class="card respuesta" style="width: 18rem;">
+            <ul class="list-group list-group-flush" *ngFor="let item of PrInterpolacion">
+              <button class="list-group-item">{{item.respuesta}}</button>
             </ul>
-        </div>
+          </div>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="view">
-    <div class="pregunta">
-      <div class="mt-4" *ngIf="(value == 'NewtonA')">
-        <h3>Newton hacia adelante</h3>
+    <div class="view">
+      <h3>Newton hacia adelante</h3>
+      <div class="pregunta">
         <ul *ngFor="let item of PrNewtonA">
-            <li>{{item.pregunta}}</li>
-            <div class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush">
-                <button class="list-group-item">Cras justo odio</button>
-                <button class="list-group-item">Dapibus ac facilisis in</button>
-                <button class="list-group-item">Vestibulum at eros</button>
-              </ul>
-            </div>
+          <li>{{item.pregunta}}</li>
+          <div class="card respuesta" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <button class="list-group-item">Cras justo odio</button>
+              <button class="list-group-item">Dapibus ac facilisis in</button>
+              <button class="list-group-item">Vestibulum at eros</button>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="view">
-    <div class="pregunta">
-      <div class="mt-4" *ngIf="(value == 'NewtonD')">
-        <h3>Newton hacia atras</h3>
+    <div class="view">
+      <h3>Newton hacia atras</h3>
+      <div class="pregunta">
         <ul *ngFor="let item of PrNewtonD">
-            <li>{{item.pregunta}}</li>
-            <div class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush">
-                <button class="list-group-item">Cras justo odio</button>
-                <button class="list-group-item">Dapibus ac facilisis in</button>
-                <button class="list-group-item">Vestibulum at eros</button>
-              </ul>
-            </div>
+          <li>{{item.pregunta}}</li>
+          <div class="card respuesta" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <button class="list-group-item">Cras justo odio</button>
+              <button class="list-group-item">Dapibus ac facilisis in</button>
+              <button class="list-group-item">Vestibulum at eros</button>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="view">
-    <div class="pregunta">
-      <div class="mt-4" *ngIf="(value == 'NewtonDD')">
-        <h3>Newton con diferencias divididas</h3>
+    <div class="view">
+      <h3>Newton con diferencias divididas</h3>
+      <div class="pregunta">
         <ul *ngFor="let item of PrNewtonDD">
-            <li>{{item.pregunta}}</li>
-            <div class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush">
-                <button class="list-group-item">Cras justo odio</button>
-                <button class="list-group-item">Dapibus ac facilisis in</button>
-                <button class="list-group-item">Vestibulum at eros</button>
-              </ul>
-            </div>
+          <li>{{item.pregunta}}</li>
+          <div class="card respuesta" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <button class="list-group-item">Cras justo odio</button>
+              <button class="list-group-item">Dapibus ac facilisis in</button>
+              <button class="list-group-item">Vestibulum at eros</button>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="view">
-    <div class="pregunta">
-      <div class="mt-4" *ngIf="(value == 'Lagrange')">
-        <h3>Lagrange</h3>
+    <div class="view">
+      <h3>Lagrange</h3>
+      <div class="pregunta">
         <ul *ngFor="let item of PrLagrange">
-            <li>{{item.pregunta}}</li>
-            <div class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush">
-                <button class="list-group-item">Cras justo odio</button>
-                <button class="list-group-item">Dapibus ac facilisis in</button>
-                <button class="list-group-item">Vestibulum at eros</button>
-              </ul>
-            </div>
+          <li>{{item.pregunta}}</li>
+          <div class="card respuesta" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <button class="list-group-item">Cras justo odio</button>
+              <button class="list-group-item">Dapibus ac facilisis in</button>
+              <button class="list-group-item">Vestibulum at eros</button>
+            </ul>
+          </div>
         </ul>
       </div>
-    </div>
-  </div>
-
-</div>
-
-<!--Contenido de todos los temas-->
-<div *ngIf="(value == 'Todos')">
-  <div class="view">
-    <h3>Interpolación Lineal</h3>
-    <div class="pregunta">
-      <ul *ngFor="let item of PrInterpolacion">
-        <li>{{item.pregunta}}</li>
-        <div class="card respuesta" style="width: 18rem;">
-          <ul class="list-group list-group-flush" *ngFor="let item of PrInterpolacion">
-            <button class="list-group-item">{{item.respuesta}}</button>
-          </ul>
-        </div>
-      </ul>
-    </div>
-  </div>
-
-  <div class="view">
-    <h3>Newton hacia adelante</h3>
-    <div class="pregunta">
-      <ul *ngFor="let item of PrNewtonA">
-        <li>{{item.pregunta}}</li>
-        <div class="card respuesta" style="width: 18rem;">
-          <ul class="list-group list-group-flush">
-            <button class="list-group-item">Cras justo odio</button>
-            <button class="list-group-item">Dapibus ac facilisis in</button>
-            <button class="list-group-item">Vestibulum at eros</button>
-          </ul>
-        </div>
-      </ul>
-    </div>
-  </div>
-
-  <div class="view">
-    <h3>Newton hacia atras</h3>
-    <div class="pregunta">
-      <ul *ngFor="let item of PrNewtonD">
-        <li>{{item.pregunta}}</li>
-        <div class="card respuesta" style="width: 18rem;">
-          <ul class="list-group list-group-flush">
-            <button class="list-group-item">Cras justo odio</button>
-            <button class="list-group-item">Dapibus ac facilisis in</button>
-            <button class="list-group-item">Vestibulum at eros</button>
-          </ul>
-        </div>
-      </ul>
-    </div>
-  </div>
-
-  <div class="view">
-    <h3>Newton con diferencias divididas</h3>
-    <div class="pregunta">
-      <ul *ngFor="let item of PrNewtonDD">
-        <li>{{item.pregunta}}</li>
-        <div class="card respuesta" style="width: 18rem;">
-          <ul class="list-group list-group-flush">
-            <button class="list-group-item">Cras justo odio</button>
-            <button class="list-group-item">Dapibus ac facilisis in</button>
-            <button class="list-group-item">Vestibulum at eros</button>
-          </ul>
-        </div>
-      </ul>
-    </div>
-  </div>
-
-  <div class="view">
-    <h3>Lagrange</h3>
-    <div class="pregunta">
-      <ul *ngFor="let item of PrLagrange">
-        <li>{{item.pregunta}}</li>
-        <div class="card respuesta" style="width: 18rem;">
-          <ul class="list-group list-group-flush">
-            <button class="list-group-item">Cras justo odio</button>
-            <button class="list-group-item">Dapibus ac facilisis in</button>
-            <button class="list-group-item">Vestibulum at eros</button>
-          </ul>
-        </div>
-      </ul>
     </div>
   </div>
 </div>
