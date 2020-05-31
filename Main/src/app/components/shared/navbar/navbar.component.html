@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div>
     <a class="navbar-brand main"  >Metodos Numericos</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,18 +25,19 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Unidad 2
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Unidad 2
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <h6 class="dropdown-header text-info">Ecuaciones no lineales</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Método Grafico</a>
-                <a class="dropdown-item" href="#">Bisectriz</a>
-                <a class="dropdown-item" href="#">Punto fijo</a>
-                <a class="dropdown-item" href="#">Newton-Raphson</a>
-                <a class="dropdown-item" href="#">Falsa posicion</a>
-                <a class="dropdown-item" href="#">Secante</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
+              <a class="dropdown-header text-primary" [routerLink]="['Unidad2']">Ecuaciones no lineales</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item disabled">Temas: </a>
+                <a class="dropdown-item disabled">Método Grafico</a>
+                <a class="dropdown-item disabled">Bisectriz</a>
+                <a class="dropdown-item disabled">Punto fijo</a>
+                <a class="dropdown-item disabled">Newton-Raphson</a>
+                <a class="dropdown-item disabled">Falsa posicion</a>
+                <a class="dropdown-item disabled">Secante</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -70,4 +72,5 @@
           </li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
