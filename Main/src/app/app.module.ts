@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Unidad1Component } from './components/unidad1/unidad1.component';
-import { Unidad2Component } from './components/unidad2/unidad2.component';
-import { Unidad3Component } from './components/unidad3/unidad3.component';
-import { Unidad4Component } from './components/unidad4/unidad4.component';
+import { Unidad2Component } from './components/unidad1-pt2/unidad1-pt2.component';
+import { Unidad3Component } from './components/unidad2/unidad2.component';
+import { Unidad4Component } from './components/unidad3/unidad4.component';
 
 
 @NgModule({
