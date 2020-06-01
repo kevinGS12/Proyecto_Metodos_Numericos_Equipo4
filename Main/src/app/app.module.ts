@@ -10,6 +10,7 @@ import { Unidad2Component } from './components/unidad1-pt2/unidad1-pt2.component
 import { Unidad3Component } from './components/unidad2/unidad2.component';
 import { Unidad4Component } from './components/unidad3/unidad4.component';
 import { Unidad2Pt2Component } from './components/unidad2-pt2/unidad2-pt2.component';
+import { RUnidad4Component } from "./components/unidad4/unidad4.component";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Unidad2Pt2Component } from './components/unidad2-pt2/unidad2-pt2.compon
     Unidad2Component,
     Unidad3Component,
     Unidad4Component,
-    Unidad2Pt2Component
+    Unidad2Pt2Component,
+    RUnidad4Component
   ],
   imports: [
     BrowserModule,
