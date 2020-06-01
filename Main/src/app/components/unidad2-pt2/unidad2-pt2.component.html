@@ -1,6 +1,6 @@
 <div class="animated fadeIn">
     <h2>Minimos Cuadrados</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta ea aliquid minima non illum eos blanditiis expedita, rerum quod temporibus est modi, consequatur ab? Dolor voluptates ullam quis in.</p>
+        <p>Es una técnica de análisis numérico enmarcada dentro de la optimización matemática, en la que, dados un conjunto de pares ordenados —variable independiente, variable dependiente— y una familia de funciones, se intenta encontrar la función continua, dentro de dicha familia, que mejor se aproxime a los datos (un "mejor ajuste"), de acuerdo con el criterio de mínimo error cuadrático.</p>
         <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Seleccione un tema
@@ -11,7 +11,6 @@
             <a class="dropdown-item" (click)="Cuadratica()">Cuadratica</a>
             <a class="dropdown-item" (click)="Cubica()">Cubica</a>
             <a class="dropdown-item" (click)="LineaF()">Linea con Funcion</a>
-            <a class="dropdown-item" (click)="CuadraticaF()">Cuadratica con Funcion</a>
         </div>
         </div>
       <!--Contenido de los temas individualmente-->
@@ -120,32 +119,7 @@
           </div>
         </div>
     
-        <div class="view">
-          <div class="pregunta">
-            <div class="mt-4" *ngIf="(value == 'CuadraticaF')">
-              <h3>Cuadratica con Funcion</h3>
-              <ul *ngFor="let item of PrCuadraticaF">
-                  <li>{{item.pregunta}}</li>
-                  <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                    <ul class="list-group list-group-flush" *ngFor="let item of R1CuadraticaF">
-                      <button class="list-group-item">{{item.respuesta}}</button>
-                    </ul>
-                  </div>
-                  <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                    <ul class="list-group list-group-flush" *ngFor="let item of R2CuadraticaF">
-                      <button class="list-group-item">{{item.respuesta}}</button>
-                    </ul>
-                  </div>
-                  <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                    <ul class="list-group list-group-flush" *ngFor="let item of R3CuadraticaF">
-                      <button class="list-group-item">{{item.respuesta}}</button>
-                    </ul>
-                  </div>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        
 
         <!--Contenido de todos los temas-->
   <div *ngIf="(value == 'Todos')">
@@ -244,29 +218,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="view">
-        <h3>Cuadratica con Funcion</h3>
-      <div class="pregunta">
-        <ul *ngFor="let item of PrCuadraticaF">
-            <li>{{item.pregunta}}</li>
-            <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush" *ngFor="let item of R1CuadraticaF">
-                <button class="list-group-item">{{item.respuesta}}</button>
-              </ul>
-            </div>
-            <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush" *ngFor="let item of R2CuadraticaF">
-                <button class="list-group-item">{{item.respuesta}}</button>
-              </ul>
-            </div>
-            <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-              <ul class="list-group list-group-flush" *ngFor="let item of R3CuadraticaF">
-                <button class="list-group-item">{{item.respuesta}}</button>
-              </ul>
-            </div>
-        </ul>
-      </div>
-    </div>
   </div>
+    
 </div>
