@@ -1,0 +1,149 @@
+<div class="animated fadeIn">
+    <h2>Minimos Cuadrados</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta ea aliquid minima non illum eos blanditiis expedita, rerum quod temporibus est modi, consequatur ab? Dolor voluptates ullam quis in.</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Seleccione un tema
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" (click)="Todos()">Mostrar todos</a>
+            <a class="dropdown-item" (click)="LineaR()">Linea Recta</a>
+            <a class="dropdown-item" (click)="Cuadratica()">Cuadratica</a>
+            <a class="dropdown-item" (click)="Cubica()">Cubica</a>
+            <a class="dropdown-item" (click)="LineaF()">Linea con Funcion</a>
+            <a class="dropdown-item" (click)="CuadraticaF()">Cuadratica con Funcion</a>
+        </div>
+        </div>
+      <!--Contenido de los temas individualmente-->
+      <div>
+        <div class="view">
+            <div class="pregunta">
+              <div *ngIf="(value == 'LineaR')">
+                  <h3>Linea Recta</h3>
+                  <ul *ngFor="let item of PrLineaR">
+                      <li>{{item.pregunta}}</li>
+                      <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
+                        <ul class="list-group list-group-flush" *ngFor="let item of R1">
+                          <button class="list-group-item">{{item.respuesta}}</button>
+                        </ul>
+                      </div>
+                      <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
+                        <ul class="list-group list-group-flush" *ngFor="let item of R2">
+                          <button class="list-group-item">{{item.respuesta}}</button>
+                        </ul>
+                      </div>
+                      <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
+                        <ul class="list-group list-group-flush" *ngFor="let item of R3I">
+                          <button class="list-group-item">{{item.respuesta}}</button>
+                        </ul>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+        </div>
+    
+        <div class="view">
+          <div class="pregunta">
+            <div class="mt-4" *ngIf="(value == 'Cuadratica')">
+              <h3>Cuadratica</h3>
+              <ul *ngFor="let item of PrCuadratica">
+                  <li>{{item.pregunta}}</li>
+                  <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R2">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R3I">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="view">
+          <div class="pregunta">
+            <div class="mt-4" *ngIf="(value == 'Cubica')">
+              <h3>Cubica</h3>
+              <ul *ngFor="let item of PrCubica">
+                  <li>{{item.pregunta}}</li>
+                  <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R2">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R3I">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="view">
+          <div class="pregunta">
+            <div class="mt-4" *ngIf="(value == 'LineaF')">
+              <h3>Linea con Funcion</h3>
+              <ul *ngFor="let item of PrLineaF">
+                  <li>{{item.pregunta}}</li>
+                  <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R2">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R3I">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="view">
+          <div class="pregunta">
+            <div class="mt-4" *ngIf="(value == 'CuadraticaF')">
+              <h3>Cuadratica con Funcion</h3>
+              <ul *ngFor="let item of PrCuadraticaF">
+                  <li>{{item.pregunta}}</li>
+                  <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R2">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+                  <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
+                    <ul class="list-group list-group-flush" *ngFor="let item of R3I">
+                      <button class="list-group-item">{{item.respuesta}}</button>
+                    </ul>
+                  </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
