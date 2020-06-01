@@ -26,8 +26,8 @@
               <ul *ngFor="let item of PrInterpolacion">
                   <li>{{item.pregunta}}</li>
                   <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                    <ul class="list-group list-group-flush" *ngFor="let item of R1Interpolacion">
-                      <button class="list-group-item">{{item.respuesta}}</button>
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1Interpolacion" >
+                      <button class="btn btn-default list-group-item">{{item.respuesta}}</button>
                     </ul>
                   </div>
                   <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">

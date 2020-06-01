@@ -10,74 +10,31 @@ export class Unidad2Pt2Component {
   PrLineaR = [
     {
       id: 0,
-      pregunta: ''
-    },
-    {
-      id: 1,
-      pregunta: ''
-    },
-    {
-      id: 2,
-      pregunta: ''
+      pregunta: '1.- Resuelve el siguiente monomio cuadrado usando n=4: x= 1.1, 1.9, 2.4, 4.8 | y= 2.5, 2.7, 3.7, 5.2'
     }
   ]
 //Respuesta Linea Recta
   R1LineaR = [
     {
       id: 0,
-      respuesta: '',
+      respuesta: 'g(x)=... | g(1.1)= 1.426544021 | g(1.9)= 9.032588699 | g(2.4)= 8.411366623 | g(4.8)= 6.229500657 ',
     },
     {
       id: 0,
-      respuesta: '',
+      respuesta: 'g(x)=... | g(1.3)= 1.426544021 | g(1.9)= 4.032588699 | g(2.4)= 1.411366623 | g(4.8)= 4.229500657',
     },
     {
       id: 0,
-      respuesta: '',
+      respuesta: 'g(x)=... | g(1.1)= 2.426544021 | g(1.9)= 3.032588699 | g(2.4)= 3.411366623 | g(4.8)= 5.229500657',
     }
   ]
-  R2LineaR = [
-    {
-      id: 1,
-      respuesta: '',
-    },
-    {
-      id: 1,
-      respuesta: '',
-    },
-    {
-      id: 1,
-      respuesta: '',
-    }
-  ]
-  R3LineaR = [
-    {
-      id: 2,
-      respuesta: '',
-    },
-    {
-      id: 2,
-      respuesta: '',
-    },
-    {
-      id: 2,
-      respuesta: '',
-    }
-  ]
+
 
 //Data Cudratica
 PrCuadratica = [
   {
     id: 0,
-    pregunta: ''
-  },
-  {
-    id: 1,
-    pregunta: ''
-  },
-  {
-    id: 2,
-    pregunta: ''
+    pregunta: '1.- Resuelve el siguiente problema usando el método cuadrático teniendo en cuenta n=4: x= 1.1, 1.9, 2.4, 4.8 | y= 2.5, 2.7, 3.7, 5.2'
   }
 ]
 
@@ -85,120 +42,48 @@ PrCuadratica = [
 R1Cuadratica = [
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(1.1)= 2.395471383 | g(1.9)= 3.046746657 | g(2.4)= 3.442162743 | g(4.8)= 5.215619219',
   },
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(1)= 1.395471383 | g(9)= 4.046746657 | g(2.8)= 0.442162743 | g(4)= 5.215619219',
   },
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(0)= 1.39578542 | g(1.23)= 3.09846557 | g(1.7)= 3.98653243 | g(4.8)= 5.875421219',
   }
 ]
-R2Cuadratica  = [
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  }
-]
-R3Cuadratica  = [
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  }
-]
+
 
 //Data Cubica
 PrCubica = [
   {
     id: 0,
-    pregunta: ''
-  },
-  {
-    id: 1,
-    pregunta: ''
-  },
-  {
-    id: 2,
-    pregunta: ''
+    pregunta: '1.- Resuelve el siguiente problema usando el método cúbico teniendo en cuenta n=4: x= 1.1, 1.9, 2.4, 4.8 | y= 2.5, 2.7, 3.7, 5.2'
   }
 ]
-
-
 //Respuesta Cubica
 R1Cubica = [
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(1.1)= 2.500000241 | g(1.9)= 2.699999189 | g(2.4)= 3.700000602 | g(4.8)= 5.199999962',
   },
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(x)= 12.500000241 | g(1.9)= 21.699999189 | g(2.4)= 4.700000602 | g(4.8)= 5.187987522',
   },
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(1)= 1.500000241 | g(9)= 5.699999189 | g(2.4)= 3.700000602 | g(4.8)= 5.199999962',
   }
 ]
-R2Cubica = [
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  }
-]
-R3Cubica = [
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  }
-]
+
 
 //Data Linea con funcion
 PrLineaF = [
   {
     id: 0,
-    pregunta: ''
-  },
-  {
-    id: 1,
-    pregunta: ''
-  },
-  {
-    id: 2,
-    pregunta: ''
+    pregunta: '1.- Resuelve el siguiente problema usando linea con función teniendo en cuenta n=4 (UTILIZAR TANGENTE): x= 1.1, 1.9, 2.4, 4.8 | y= 2.5, 2.7, 3.7, 5.2'
   }
 ]
 
@@ -206,105 +91,19 @@ PrLineaF = [
 R1LineaF = [
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(3.7)= 4.4324414641 | g(9)= 4.98565705 |g(2.8)= 2.4232208 |g(4.8)= 5.186867446'
+  
   },
   {
     id: 0,
-    respuesta: '',
+    respuesta: 'g(1.1)= 7.46741 | g(2.5)= 8.76565705 |g(4)= 3.724032208 |g(8)= 5.156457446',
   },
   {
     id: 0,
-    respuesta: '',
-  }
-]
-R2LineaF = [
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  }
-]
-R3LineaF = [
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
+    respuesta: 'g(1.1)= 2.467414641 | g(1.9)= 2.721685705 |g(2.4)= 3.724032208 |g(4.8)= 5.186867446',
   }
 ]
 
-//Data Cuadratica con funcion
-PrCuadraticaF = [
-  {
-    id: 0,
-    pregunta: ''
-  },
-  {
-    id: 1,
-    pregunta: ''
-  },
-  {
-    id: 2,
-    pregunta: ''
-  }
-]
-
-//Respuesta Cuadratica con Funcion
-R1CuadraticaF = [
-  {
-    id: 0,
-    respuesta: '',
-  },
-  {
-    id: 0,
-    respuesta: '',
-  },
-  {
-    id: 0,
-    respuesta: '',
-  }
-]
-R2CuadraticaF  = [
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  },
-  {
-    id: 1,
-    respuesta: '',
-  }
-]
-R3CuadraticaF = [
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  },
-  {
-    id: 2,
-    respuesta: '',
-  }
-]
 
   
   value: string;
@@ -322,9 +121,7 @@ R3CuadraticaF = [
   LineaF(){
     this.value = 'LineaF'
   }
-  CuadraticaF(){
-    this.value = 'CuadraticaF'
-  }
+
   Todos(){
     this.value = 'Todos';
   }

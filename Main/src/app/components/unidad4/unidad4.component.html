@@ -1,6 +1,6 @@
 <div class="animated fadeIn">
     <h2>Ecuaciones diferenciales ordinarias</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit fuga est iste debitis necessitatibus repudiandae doloremque fugit natus corporis! Aliquam architecto ipsum totam, obcaecati cupiditate atque beatae dignissimos temporibus.</p>
+    <p>Es la ecuación diferencial que relaciona una función desconocida de una variable independiente con sus derivadas. Es decir, una sola variable independiente (a diferencia de las ecuaciones diferenciales parciales que involucran derivadas parciales de varias variables), y una o más de sus derivadas respecto de tal variable.</p>
     <div class="btn-group">
         <button type="button" class="btn btn-primary dropdown-toggle mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Seleccione un tema
@@ -8,16 +8,11 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" (click)="Todos()">Mostrar todos</a>
           <a class="dropdown-item" (click)="Euler()">Euler</a>
-          <a class="dropdown-item" (click)="EulerA()">Euler hacia adelante</a>
-          <a class="dropdown-item" (click)="EulerD()">Euler hacia atras</a>
-          <a class="dropdown-item" (click)="MetodoRK()">Método Runge-Kutten</a>
           <a class="dropdown-item" (click)="Orden2()">2do. Orden</a>
           <a class="dropdown-item" (click)="Orden3()">3er. Orden</a>
           <a class="dropdown-item" (click)="Orden4()">4to. Orden</a>
-          <a class="dropdown-item" (click)="Simpson1()">1/3 de Simpson</a>
-          <a class="dropdown-item" (click)="Simpson3()">3/8 de Simpson</a>
           <a class="dropdown-item" (click)="OrdenS()">Orden superior</a>
-      </div>
+      </div>  
     </div>
 
 <!--Contenido de los temas individualmente-->
@@ -45,84 +40,6 @@
                   </div>
               </ul>
           </div>
-      </div>
-    </div>
-
-    <div class="view">
-      <div class="pregunta">
-        <div class="mt-4" *ngIf="(value == 'EulerA')">
-          <h3>Euler hacia adelante</h3>
-          <ul *ngFor="let item of PrEulerA">
-              <li>{{item.pregunta}}</li>
-              <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R1EulerA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R2EulerA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R3EulerA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="view">
-      <div class="pregunta">
-        <div class="mt-4" *ngIf="(value == 'EulerD')">
-          <h3>Euler hacia atras</h3>
-          <ul *ngFor="let item of PrEulerD">
-              <li>{{item.pregunta}}</li>
-              <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R1EulerD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R2EulerD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R3EulerD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="view">
-      <div class="pregunta">
-        <div class="mt-4" *ngIf="(value == 'MetodoRK')">
-          <h3>Método Runge-Kutten</h3>
-          <ul *ngFor="let item of PrMetodoRK">
-              <li>{{item.pregunta}}</li>
-              <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R1MetodoRK">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R2MetodoRK">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-              <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                <ul class="list-group list-group-flush" *ngFor="let item of R3MetodoRK">
-                  <button class="list-group-item">{{item.respuesta}}</button>
-                </ul>
-              </div>
-          </ul>
-        </div>
       </div>
     </div>
 
@@ -181,7 +98,7 @@
       <div class="view">
         <div class="pregunta">
           <div class="mt-4" *ngIf="(value == 'Orden4')">
-            <h3>4to. Orden</h3>
+            <h3>4ta. Orden</h3>
             <ul *ngFor="let item of PrOrden4">
                 <li>{{item.pregunta}}</li>
                 <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
@@ -196,58 +113,6 @@
                 </div>
                 <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                   <ul class="list-group list-group-flush" *ngFor="let item of R3Orden4">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="view">
-        <div class="pregunta">
-          <div class="mt-4" *ngIf="(value == 'Simpson1')">
-            <h3>1/3 de Simpson</h3>
-            <ul *ngFor="let item of PrSimpson1">
-                <li>{{item.pregunta}}</li>
-                <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R1Simpson1">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R2Simpson1">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R3Simpson1">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="view">
-        <div class="pregunta">
-          <div class="mt-4" *ngIf="(value == 'Simpson3')">
-            <h3>3/8 de Simpson</h3>
-            <ul *ngFor="let item of PrSimpson3">
-                <li>{{item.pregunta}}</li>
-                <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R1Simpson3">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R2Simpson3">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R3Simpson3">
                     <button class="list-group-item">{{item.respuesta}}</button>
                   </ul>
                 </div>
@@ -310,78 +175,7 @@
           </div>
         </div>
     
-        <div class="view">
-          <h3>Euler hacia adelante</h3>
-          <div class="pregunta">
-            <ul *ngFor="let item of PrEulerA">
-                <li>{{item.pregunta}}</li>
-                <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R1EulerA">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R2EulerA">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R3EulerA">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="view">
-          <h3>Euler hacia atras</h3>
-          <div class="pregunta">
-            <ul *ngFor="let item of PrEulerD">
-                <li>{{item.pregunta}}</li>
-                <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R1EulerD">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R2EulerD">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R3EulerD">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="view">
-          <h3>Método Runge-Kutten</h3>
-          <div class="pregunta">
-            <ul *ngFor="let item of PrMetodoRK">
-                <li>{{item.pregunta}}</li>
-                <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R1MetodoRK">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R2MetodoRK">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-                <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" *ngFor="let item of R3MetodoRK">
-                    <button class="list-group-item">{{item.respuesta}}</button>
-                  </ul>
-                </div>
-            </ul>
-          </div>
-        </div>
-    
+        
         <div class="view">
         <h3>2do. Orden</h3>
           <div class="pregunta">
@@ -454,54 +248,7 @@
               </div>
         </div>
 
-        <div class="view">
-            <h3>1/3 de Simpson</h3>
-              <div class="pregunta">
-                <ul *ngFor="let item of PrSimpson1">
-                    <li>{{item.pregunta}}</li>
-                    <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R1Simpson1">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                    <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R2Simpson1">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                    <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R3Simpson1">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                </ul>
-              </div>
-        </div>
-
-        <div class="view">
-            <h3>3/8 de Simpson</h3>
-              <div class="pregunta">
-                <ul *ngFor="let item of PrSimpson3">
-                    <li>{{item.pregunta}}</li>
-                    <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R1Simpson3">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                    <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R2Simpson3">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                    <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
-                      <ul class="list-group list-group-flush" *ngFor="let item of R3Simpson3">
-                        <button class="list-group-item">{{item.respuesta}}</button>
-                      </ul>
-                    </div>
-                </ul>
-              </div>
-        </div>
-
+      
         <div class="view">
             <h3>Orden superior</h3>
               <div class="pregunta">
