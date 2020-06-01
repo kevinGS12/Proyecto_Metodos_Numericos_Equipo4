@@ -25,7 +25,7 @@ export class Unidad2Component{
       pregunta: '3.- Encuentra las raices de la siguiente función: y=x^3 - 6.5x + 2'
     },
   ]
-  //Respuestas Interpolacion 
+  //Respuestas Grafico
   R1Grafico = [
     {
       id: 0,
@@ -80,7 +80,7 @@ export class Unidad2Component{
       pregunta: '2.- ¿Qué tipo de búsqueda se utiliza en este método?'
     }
   ]
-   //Respuestas Interpolacion 
+   //Respuestas Bisectriz
    R1Bisectriz = [
     {
       id: 0,
