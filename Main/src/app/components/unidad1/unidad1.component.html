@@ -26,18 +26,18 @@
               <ul *ngFor="let item of PrInterpolacion">
                   <li>{{item.pregunta}}</li>
                   <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
-                    <ul class="list-group list-group-flush" *ngFor="let item of R1Interpolacion" >
-                      <button class="btn btn-default list-group-item">{{item.respuesta}}</button>
+                    <ul class="list-group list-group-flush" *ngFor="let item of R1Interpolacion">
+                      <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                     </ul>
                   </div>
                   <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
                     <ul class="list-group list-group-flush" *ngFor="let item of R2Interpolacion">
-                      <button class="list-group-item">{{item.respuesta}}</button>
+                      <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                     </ul>
                   </div>
                   <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                     <ul class="list-group list-group-flush" *ngFor="let item of R3Interpolacion">
-                      <button class="list-group-item">{{item.respuesta}}</button>
+                      <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                     </ul>
                   </div>
               </ul>
@@ -53,17 +53,17 @@
               <li>{{item.pregunta}}</li>
               <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonA">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
           </ul>
@@ -79,17 +79,17 @@
               <li>{{item.pregunta}}</li>
               <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button  class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button  class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
           </ul>
@@ -105,17 +105,17 @@
               <li>{{item.pregunta}}</li>
               <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonDD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonDD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonDD">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
           </ul>
@@ -131,17 +131,17 @@
               <li>{{item.pregunta}}</li>
               <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R1Lagrange">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R2Lagrange">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
               <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
                 <ul class="list-group list-group-flush" *ngFor="let item of R3Lagrange">
-                  <button class="list-group-item">{{item.respuesta}}</button>
+                  <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
                 </ul>
               </div>
           </ul>
@@ -160,17 +160,17 @@
           <li>{{item.pregunta}}</li>
           <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R1Interpolacion">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R2Interpolacion">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R3Interpolacion">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
         </ul>
@@ -184,17 +184,17 @@
           <li>{{item.pregunta}}</li>
           <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonA">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonA">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonA">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
         </ul>
@@ -208,17 +208,17 @@
           <li>{{item.pregunta}}</li>
           <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
         </ul>
@@ -232,17 +232,17 @@
           <li>{{item.pregunta}}</li>
           <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R1NewtonDD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R2NewtonDD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R3NewtonDD">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
         </ul>
@@ -256,17 +256,17 @@
           <li>{{item.pregunta}}</li>
           <div *ngIf="item.id == 0" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R1Lagrange">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 1" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R2Lagrange">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
           <div *ngIf="item.id == 2" class="card respuesta" style="width: 18rem;">
             <ul class="list-group list-group-flush" *ngFor="let item of R3Lagrange">
-              <button class="list-group-item">{{item.respuesta}}</button>
+              <button class="list-group-item btn btn-outline-info" type="button">{{item.respuesta}}</button>
             </ul>
           </div>
         </ul>
