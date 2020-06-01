@@ -10,7 +10,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Unidad 1
+            Unidad 1 
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
             <a class="dropdown-header text-primary" [routerLink]="['Unidad1']">Interpolación Polinomial</a>
@@ -21,6 +21,16 @@
             <a class="dropdown-item disabled">Newton hacia atras</a>
             <a class="dropdown-item disabled">Newton con diferencias divididas</a>
             <a class="dropdown-item disabled">Lagrange</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-header text-primary" [routerLink]="['Unidad1-pt2']">Ecuaciones no lineales</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item disabled">Temas: </a>
+            <a class="dropdown-item disabled">Método Grafico</a>
+            <a class="dropdown-item disabled">Bisectriz</a>
+            <a class="dropdown-item disabled">Punto fijo</a>
+            <a class="dropdown-item disabled">Newton-Raphson</a>
+            <a class="dropdown-item disabled">Falsa posicion</a>
+            <a class="dropdown-item disabled">Secante</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -28,15 +38,22 @@
             Unidad 2
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
-              <a class="dropdown-header text-primary" [routerLink]="['Unidad2']">Ecuaciones no lineales</a>
+              <a class="dropdown-header text-primary" [routerLink]="['Unidad2']">Ecuaciones lineales</a>
               <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled">Temas: </a>
-                <a class="dropdown-item disabled">Método Grafico</a>
-                <a class="dropdown-item disabled">Bisectriz</a>
-                <a class="dropdown-item disabled">Punto fijo</a>
-                <a class="dropdown-item disabled">Newton-Raphson</a>
-                <a class="dropdown-item disabled">Falsa posicion</a>
-                <a class="dropdown-item disabled">Secante</a>
+              <a class="dropdown-item disabled">Temas: </a>
+              <a class="dropdown-item disabled">Método Montante</a>
+              <a class="dropdown-item disabled">Método Gauss-Jordan</a>
+              <a class="dropdown-item disabled">Eliminación Gaussiana</a>
+              <a class="dropdown-item disabled" >Gauss-Seidel</a>
+              <a class="dropdown-item disabled">Jacobi</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-header text-primary" [routerLink]="['Unidad2']">Minimos Cuadrados</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item disabled">Linea Recta</a>
+              <a class="dropdown-item disabled">Cuadratica</a>
+              <a class="dropdown-item disabled">Cubica</a>
+              <a class="dropdown-item disabled">Lineal con funcion</a>
+              <a class="dropdown-item disabled">Cuadratica con funcion</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -44,14 +61,13 @@
               Unidad 3
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
-                <a class="dropdown-header text-primary" [routerLink]="['Unidad3']">Ecuaciones lineales</a>
+                <a class="dropdown-header text-primary" [routerLink]="['Unidad3']">Integracion</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item disabled">Temas: </a>
-                <a class="dropdown-item disabled">Método Montante</a>
-                <a class="dropdown-item disabled">Método Gauss-Jordan</a>
-                <a class="dropdown-item disabled">Eliminación Gaussiana</a>
-                <a class="dropdown-item disabled" >Gauss-Seidel</a>
-                <a class="dropdown-item disabled">Jacobi</a>
+                <a class="dropdown-item disabled">Regla Trapezoidal</a>
+                <a class="dropdown-item disabled">Regla de 1/3 Simpson</a>
+                <a class="dropdown-item disabled">Regla de 3/8 Simpson</a>
+                <a class="dropdown-item disabled">Newton-Cotes (Cerradas y abiertas)</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -59,14 +75,19 @@
               Unidad 4
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" routerLinkActive="active">
-                <a class="dropdown-header text-primary" [routerLink]="['Unidad4']">Integración</a>
+                <a class="dropdown-header text-primary" [routerLink]="['']">Ecuaciones diferenciales ordinarias</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item disabled">Temas: </a>
-                <a class="dropdown-item disabled">Regla Trapezoidal</a>
-                <a class="dropdown-item disabled">Regla de 3/8 Simpson</a>
-                <a class="dropdown-item disabled">Newton-Cotes (Cerradas y abiertas)</a>
-                <a class="dropdown-item disabled">Ecuaciones diferenciales ordinaria</a>
+                <a class="dropdown-item disabled">Euler</a>
+                <a class="dropdown-item disabled">Euler hacia adelante</a>
+                <a class="dropdown-item disabled">Euler hacia atras</a>
                 <a class="dropdown-item disabled">Método Runge-Kutten</a>
+                <a class="dropdown-item disabled">2do. Orden</a>
+                <a class="dropdown-item disabled">3er. Orden</a>
+                <a class="dropdown-item disabled">4to. Orden</a>
+                <a class="dropdown-item disabled">1/3 de Simpson</a>
+                <a class="dropdown-item disabled">3/8 de Simpson</a>
+                <a class="dropdown-item disabled">Orden superior</a>
             </div>
           </li>
       </ul>
